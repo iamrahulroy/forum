@@ -12,6 +12,16 @@
  *= require_tree .
  */
 @import 'bootstrap';
+
 body {
   margin-top: 100px;
+}
+
+.table {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.field {
+  margin-left: 50px;
 }
