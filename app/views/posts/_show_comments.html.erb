@@ -1,0 +1,7 @@
+<% if @post.comments.size > 0 %>
+  <h2>Comments</h2>
+  <% for comment in @post.comments %>
+    <h3><%= comment.name %></h3>
+    <p><%= comment.body %></p>
+  <% end %>
+<% end %>
