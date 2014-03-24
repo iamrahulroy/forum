@@ -1,28 +1,33 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+== ASSIGNMENT START ==
 
-Things you may want to cover:
+Following technologies has been used to build this app:
 
-* Ruby version
+* Ruby on Rails
+* Coffeescript
+* MongoDB (using the Mongoid or MongoMapper gem)
+* Twitter Bootstrap
+* Backbone.js
 
-* System dependencies
+The application is a simple forum which consists of
 
-* Configuration
+- Topics
+- Comments on the topics
 
-* Database creation
+So basically you can create, edit and delete a topic. A topic basically has 3 fields, all inputed using the topic form
 
-* Database initialization
+1. Name of creator of topic
+2. Title of topic
+3. Content of topic
 
-* How to run the test suite
+And comments can be created, edited and deleted and they are attached to a topic. A comment basically has 2 fields, all inputed using the topic form
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Name of comment creator
+2. Content of comment
 
-* Deployment instructions
+Nothing additional, such as user accounts are required. Keep the app as simple as possible with a clean layout. 
 
-* ...
+Let me know if you have any questions.
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== ASSIGNMENT END ==
