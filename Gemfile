@@ -10,8 +10,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 gem 'bson_ext'
-
-gem 'turbolinks'
+gem 'backbone-on-rails'
 
 gem 'jbuilder', '~> 1.2'
 
