@@ -1,0 +1,33 @@
+// NewPost = ModalView.extend(
+// {
+//     name: "newPost",
+//     model: PersonModel,
+//     templateHtml:
+//         "<form>" +
+//  "<label for="personName">Person's name</label>" +
+//  "<input id="personName" type="text" />" +
+//  "<input id="addPersonButton" type="submit" value="Add person" />" +
+//  "</form>",
+//     initialize:
+//         function()
+//         {
+//             _.bindAll( this, "render");
+//             this.template = _.template( this.templateHtml);
+//         },
+//     events:
+//         {
+//             "submit form": "addPerson"
+//         },
+//     addPerson:
+//         function()
+//         {
+//             this.hideModal();
+//             _people.add( new PersonModel({name: $("#personName").val()}));
+//         },
+//     render:
+//         function()
+//         {
+//             $(this.el).html( this.template());
+//             return this;
+//         }
+// });
