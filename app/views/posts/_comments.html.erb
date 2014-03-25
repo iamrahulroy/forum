@@ -4,15 +4,15 @@
   
   <p  class="input-small">
     <div class="name"> <%= f.label :name %></div><br />
-    <%= f.text_field :name %><br />
+    <%= f.text_field :name, class: 'form-control', placeholder: 'Name Here..', required: 'required'%><br />
   </p>
   
   <p>
     <%= f.label :body %><br />
-    <span class="content"><%= f.text_area :body %><br /></span>
+    <span class="content"><%= f.text_area :body, class: 'form-control', rows: '6', placeholder: 'Comment Here..', required: 'required' %><br /></span>
   </p>
   
   <p>
-    <%= f.submit %><br />
+    <input type="submit" class="btn btn-success" value="Enter Comment">
   </p>
 <% end %>

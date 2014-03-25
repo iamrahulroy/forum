@@ -1,26 +1,27 @@
 <div class="container">
-  <p id="notice"><%= notice %></p>
-
+<% if notice %>
+<div class="alert alert-success">
+    <p id="notice"><%= notice %></p>
+    </div>
+<%end%>    
   <div class="row">
     <div class="col-lg-8">
     <h1>
-      <strong>Title:</strong>
       <%= @post.title %>
     </h1>
-
-    <p class="lead">
-      <strong>Body:</strong>
-      <%= @post.body %>
-    </p>
-
+  <div class="well">
+      <p ><%= @post.body %></p>
+  </div>
     <p  class="lead">
-      <strong>User:</strong>
+      <strong>By:</strong>
       <%= @post.user %>
     </p>
-    <%= link_to 'Edit', edit_post_path(@post), class: "btn btn-primary" %> |
-    <%= link_to 'Back', posts_path, class: "btn btn-primary" %>
+    <%= link_to 'Edit', edit_post_path(@post), class: "btn btn-primary" %>
+    <%= link_to 'Back', posts_path, class: "btn btn-success" %>
     </div>
   </div>
-  <%= render 'posts/show_comments' %>
-  <%= render 'posts/comments' %>
+  <div class="comment_align">
+    <%= render 'posts/show_comments' %>
+    <%= render 'posts/comments' %>
+  </div>
 <div>
